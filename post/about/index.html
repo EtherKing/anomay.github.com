@@ -1,130 +1,127 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>关于 | Anomay</title>
-<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://etherking.github.io/favicon.ico?v=1584716644522">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="http://etherking.github.io/favicon.ico?v=1584717215365">
 <link rel="stylesheet" href="http://etherking.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="關於域名Welcome to Another Maya.域名AnoMay則是其簡寫。
+同這個名字所捏他的語源一般，這裏是記載虛幻之物的，記憶宮殿。
+關於我我是宇佐見空幻（うさみ　そらげん）。
+在網路上通常以”彼岸之幻”的身份進行活動；不過如..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="http://etherking.github.io">
-        <img class="avatar" src="http://etherking.github.io/images/avatar.png?v=1584716644522" alt="" width="32px" height="32px">
-      </a>
-      <a href="http://etherking.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://etherking.github.io">
+        <img src="http://etherking.github.io/images/avatar.png?v=1584717215365" class="site-logo">
         <h1 class="site-title">Anomay</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">关于</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-01-25</span>
-            
-          </div>
-          <div class="post-content">
-            <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
-
-          </div>
-        </div>
-
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
         
-      </div>
-
       
-
-      <div class="site-footer">
-  <div class="slogan">温故而知新</div>
-  <div class="social-container">
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
-      
-    
+    </div>
+    <div class="site-description">
+      Hope never die.
+    </div>
+    <div class="site-footer">
+      Copyright © 2014-2020 AnoMay. All Rights Reserved. 
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://etherking.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://etherking.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
 
-    </div>
-    <script type="application/javascript">
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于</h2>
+            <div class="post-date">2017-11-15</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="關於域名"><a href="#關於域名" class="headerlink" title="關於域名"></a>關於域名</h2><p>Welcome to Another Maya.<br>域名AnoMay則是其簡寫。</p>
+<p>同這個名字所捏他的語源一般，這裏是記載虛幻之物的，記憶宮殿。</p>
+<h2 id="關於我"><a href="#關於我" class="headerlink" title="關於我"></a>關於我</h2><p>我是宇佐見空幻（うさみ　そらげん）。</p>
+<p>在網路上通常以”彼岸之幻”的身份進行活動；不過如果覺得難以記憶<del>而且有點中二</del>的話，<br>請叫我”空幻”就好。</p>
+<p>————是”天空的幻想(そらのむげん)”的”空幻(そらげん)”呢。</p>
+<p>雖然很想以這樣或者那樣的身份自居，不過遺憾的是到現在爲止還沒有像樣的作品發表。<br>姑且，留待日後吧。</p>
+<blockquote>
+<p>一直對於製作獨立遊戲有著強烈執著<br>有同好有小型企劃的話歡迎聯繫<br><a href="me@anomay.com"></a></p>
+            </div>
+            
+            
 
-hljs.initHighlightingOnLoad()
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -134,6 +131,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
