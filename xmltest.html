@@ -22,15 +22,20 @@ else
 xmlhttp.open("GET","cd_catalog.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
-
+	
 document.write("<table border='1'>");
 var x=xmlDoc.getElementsByTagName("order");
+    document.write("<tr><th>customerID</th><th>order_date</th><th>order_status</th><th>items</th></tr>");
 for (i=0;i<x.length;i++)
-  {
+  { 
   document.write("<tr><td>");
   document.write(x[i].getElementsByTagName("customerID")[0].childNodes[0].nodeValue);
   document.write("</td><td>");
   document.write(x[i].getElementsByTagName("order_data")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("order_status")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("items")[0].childNodes[0].nodeValue);
   document.write("</td></tr>");
   }
 document.write("</table>");
